@@ -1,13 +1,19 @@
 import React from 'react';
 
-class Type extends React.Component{
+var divStyle = {
+    color: 'black',
+    display: 'flex',
+  };
 
+class Type extends React.Component{
 
     render(){
         return(
-            <div className="typing-container">
+            <div className="typing-container" style={divStyle}>
                 <div id="typing-bar">
-                    Typing area
+                    <form>
+                        <input type="text" id="type-text"></input>
+                    </form>
                 </div>
                 <button>Send</button>
             </div>
