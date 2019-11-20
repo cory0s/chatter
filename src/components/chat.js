@@ -1,20 +1,11 @@
 import React from 'react';
+// import { joinRoom, leaveRoom } from '../api/api'
 
-class Chat extends React.Component{
-
-
-    render(){
-        return(
-            <div className="chat-container">
-                <div id="main-text">
-                    Main Text
-                </div>
-                <div id="friend-list">
-                    My friends
-                </div>
-            </div>
-        )
-    }
+const Chat = () => {
+    
+    return(
+        <h1>Hello</h1>
+    )
 }
 
 export default Chat;

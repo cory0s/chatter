@@ -1,15 +1,16 @@
 import React from 'react';
-import Header from './components/header';
-import Chat from './components/chat';
-import Type from './components/type';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Chat />
-      <Type />
-    </div>
+import Join from './components/join';
+import Chat from './components/chat';
+
+const App = () => {
+
+  return(
+    <Router>
+      <Route path="/" exact component={Join} />
+      <Route path="/chat" exact component={Chat} />
+    </Router>
   );
 }
 
