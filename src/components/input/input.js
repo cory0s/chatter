@@ -6,11 +6,12 @@ const Input = ({ message, setMessage, sendMessage }) => {
     return(
         <div className="form">
             <input 
-            className="input"
-            type="text"
-            placeholder="Type a message..."
-            // value={message}
-            onChange={(e)=> setMessage}
+                className="input"
+                type="text"
+                placeholder="Write something..."
+                // value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' ? sendMessage(e) : null}
             />
             <button className="sendButton" onClick={(e) => sendMessage(e)}>Send</button>
         </div>
