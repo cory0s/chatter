@@ -1,0 +1,10 @@
+.infoBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoBar a{  
+    font-size: 1.5em;
+    margin: 10px;
+    text-decoration: none;
+}
