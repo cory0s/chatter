@@ -1,16 +1,35 @@
 .messageBox{
     background: white;
     border-radius: 20px;
-    padding: 5px 20px;
-    color: white;
+    /* color: white; */
     display: inline-block;
     max-width: 80%;
+    margin: 2px;
+    padding: 5px 20px;
 }
 
 .messageText{
-    width: 100%;
-    letter-spacing: 0;
+    border: 2px solid grey;
+    border-radius: 5px;
     float: left;
     font-size: 1.1em;
+    /* letter-spacing: 0; */
+    margin: 0px;
+    padding: 2px 2px;
+    width: 100%;
     word-wrap: break-word;
+}
+
+.justifyEnd{
+    background: pink;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sentText{
+    margin-bottom: 5px;
+}
+
+.backgroundBlue{
+    background: rgb(57, 57, 228);
 }
