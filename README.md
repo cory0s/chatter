@@ -1,7 +1,7 @@
 # Chatter
 A real time chat hangouts application.
 
-See server repo here: (https://github.com/cory0s/chatter-server)
+See server repo here: https://github.com/cory0s/chatter-server
 
 ## Features
 - React
