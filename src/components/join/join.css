@@ -1,0 +1,41 @@
+.joinOuterContainer{
+    padding-top: 15%;
+}
+
+.joinInnerContainer{
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 320px;
+    width: 50%;
+}
+
+.joinInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.joinInput input{
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 5px;
+}
+
+.heading{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0px;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    text-decoration: none;
+    width: 150px;
+}
+
+.button{
+    font-size: 1.1em;
+    margin: 0px auto;
+    text-decoration: none;
+    width: 100%;
+}
