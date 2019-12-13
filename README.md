@@ -13,6 +13,6 @@ See server repo here: https://github.com/cory0s/chatter-server
 
 ## To Do
 [x] List of people currently signed in
-- DB storage of recent messages
-- List of available rooms to join
-- User authorization
+[] DB storage of recent messages
+[] List of available rooms to join
+[] User authorization
