@@ -14,6 +14,10 @@
     flex-direction: column;
 }
 
+.joinInput p{
+    margin: 0px auto 0px;
+}
+
 .joinInput input{
     font-family: 'Comfortaa', cursive;
     margin-bottom: 5px;
@@ -28,7 +32,7 @@
 a{
     display: flex;
     justify-content: center;
-    margin: 15px auto;
+    margin: 10px auto;
     text-decoration: none;
     width: 150px;
 }

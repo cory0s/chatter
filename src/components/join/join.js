@@ -21,7 +21,15 @@ const Join = () => {
                             onClick={(e) => (!name || !room) ? e.preventDefault() : null} 
                             to={`/chat?name=${name}&room=${room}`}>
                             <Button className="button" variant="contained" color="primary">
-                                Go to Chat
+                                Create a Chat
+                            </Button>
+                        </Link>
+                        <p>OR</p>
+                        <Link 
+                            onClick={(e) => (!name || !room) ? e.preventDefault() : null} 
+                            to={`/chat?name=${name}&room=${room}`}>
+                            <Button className="button" variant="contained" color="primary">
+                                    Join Existing
                             </Button>
                         </Link>
                     </div>
