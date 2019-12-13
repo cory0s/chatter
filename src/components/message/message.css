@@ -1,13 +1,17 @@
 .messageContainer.justifyEnd{
-    background: pink;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
+
+/* .messageContainer.justifyStart{
+    display: flex;
+    justify-content: flex-start;
+} */
 
 .messageBox{
     background: white;
     border-radius: 20px;
-    /* color: white; */
     display: inline-block;
     max-width: 80%;
     margin: 2px;
@@ -15,7 +19,6 @@
 }
 
 .messageText{
-    border: 2px solid grey;
     border-radius: 5px;
     float: left;
     font-size: 1.1em;
@@ -24,12 +27,6 @@
     width: 100%;
     word-wrap: break-word;
 }
-
-/* .justifyEnd{
-    background: pink;
-    display: flex;
-    justify-content: flex-end;
-} */
 
 .sentText{
     margin-bottom: 5px;

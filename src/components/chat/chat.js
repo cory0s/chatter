@@ -4,8 +4,9 @@ import io from 'socket.io-client';
 import queryString from 'query-string';
 
 import InfoBar from '../infobar/infobar';
-import Input from '../input/input'
-import Messages from '../messages/messages'
+import Input from '../input/input';
+import Messages from '../messages/messages';
+import Users from '../users/users'
 
 import './chat.css';
 
@@ -16,6 +17,7 @@ const Chat = ({ location }) => {
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const [users, setUsers] = useState([]);
 
     const ENDPOINT = 'localhost:8000';
     
@@ -43,6 +45,12 @@ const Chat = ({ location }) => {
         }, [messages]);
     });
 
+    useEffect(() => {
+        socket.on('roomData', (data) => {
+            setUsers([...data.users]);
+        }, [users]);
+    });
+
     const sendMessage = (event) => {
         event.preventDefault();
 
@@ -56,9 +64,14 @@ const Chat = ({ location }) => {
     return(
         <div className="outerContainer">
             <div className="container">
-                <InfoBar room={room}/>
-                <Messages messages={messages} name={name}/>
-                <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+                <div className="chatContainer">
+                    <InfoBar room={room}/>
+                    <Messages messages={messages} name={name}/>
+                    <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+                </div>
+                <div className="usersContainer">
+                    <Users users={users}/>
+                </div>
             </div>
         </div>
     )
