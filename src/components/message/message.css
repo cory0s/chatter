@@ -1,3 +1,9 @@
+.messageContainer.justifyEnd{
+    background: pink;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .messageBox{
     background: white;
     border-radius: 20px;
@@ -13,18 +19,17 @@
     border-radius: 5px;
     float: left;
     font-size: 1.1em;
-    /* letter-spacing: 0; */
     margin: 0px;
     padding: 2px 2px;
     width: 100%;
     word-wrap: break-word;
 }
 
-.justifyEnd{
+/* .justifyEnd{
     background: pink;
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 .sentText{
     margin-bottom: 5px;
