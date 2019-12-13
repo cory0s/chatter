@@ -52,9 +52,7 @@ const Chat = ({ location }) => {
             });
         }
     }
-
-    console.log('messages:', message, messages);
-
+    
     return(
         <div className="outerContainer">
             <div className="container">
