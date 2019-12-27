@@ -15,4 +15,5 @@ See server repo here: https://github.com/cory0s/chatter-server
 - [x] List of people currently signed in
 - [ ] DB storage of recent messages
 - [ ] List of available rooms to join
+- [ ] Emojis
 - [ ] User authorization
