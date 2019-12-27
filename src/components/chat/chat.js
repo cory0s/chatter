@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-// import { joinRoom, leaveRoom } from '../api/api'
 import io from 'socket.io-client';
 import queryString from 'query-string';
 
 import InfoBar from '../infobar/infobar';
 import Input from '../input/input';
 import Messages from '../messages/messages';
-import Users from '../users/users'
+import Users from '../users/users';
+import Rooms from '../rooms/rooms';
 
 import './chat.css';
 
@@ -18,6 +18,7 @@ const Chat = ({ location }) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const [users, setUsers] = useState([]);
+    const [rooms, setRooms] = useState([]);
 
     const ENDPOINT = 'localhost:8000';
     
@@ -39,15 +40,20 @@ const Chat = ({ location }) => {
 
     }, [ENDPOINT, location.search]);
 
+    // Update messages queue whenever new message is sent
     useEffect(() => {
         socket.on('message', (message) => {
             setMessages([...messages, message]);
         }, [messages]);
     });
 
+    // Update users and rooms whenever new socket joins
     useEffect(() => {
         socket.on('roomData', (data) => {
+            console.log('data from roomData', data);
+            console.log(data.rooms);
             setUsers([...data.users]);
+            setRooms([data.rooms]);
         }, [users]);
     });
 
@@ -71,6 +77,7 @@ const Chat = ({ location }) => {
                 </div>
                 <div className="usersContainer">
                     <Users users={users}/>
+                    <Rooms rooms={rooms} />
                 </div>
             </div>
         </div>
