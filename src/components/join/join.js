@@ -18,7 +18,7 @@ const Join = () => {
                         <Input placeholder="Enter your name" className="joinInput" type="text" onChange={(e)=> setName(e.target.value) } required/>
                         <Input placeholder="Enter your room" className="joinInput mt-20" type="text" onChange={(e) => setRoom(e.target.value)} required/>
                         <Link 
-                            onClick={(e) => (!name || !room) ? e.preventDefault() : null} 
+                            onClick={(e) => (!name || !room) ? e.preventDefault() : null}
                             to={`/chat?name=${name}&room=${room}`}>
                             <Button className="button" variant="contained" color="primary">
                                 Create a Chat

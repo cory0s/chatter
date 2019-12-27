@@ -29,6 +29,8 @@
 .usersContainer{
     background: rgb(241, 181, 102);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     margin-left: 3px;
     padding: 10px;
     width: 30%;
