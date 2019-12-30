@@ -50,11 +50,14 @@ const Chat = ({ location }) => {
     // Update users and rooms whenever new socket joins
     useEffect(() => {
         socket.on('roomData', (data) => {
-            console.log('data from roomData', data);
-            console.log(data.rooms);
             setUsers([...data.users]);
-            setRooms([data.rooms]);
         }, [users]);
+    });
+
+    useEffect(() => {
+        socket.on('allRoomData', (data) => {
+            setRooms([...data.rooms]);
+        }, [rooms]);
     });
 
     const sendMessage = (event) => {
