@@ -1,8 +1,14 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
+import React, { setGlobal } from 'reactn';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+setGlobal({
+    rooms: [],
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -1,13 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
+import JoinSelect from '../joinSelect/joinSelect'
+
 import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
 
 import './join.css';
 
+// const ENDPOINT = 'http://localhost:8000';
+// const config = {
+//     headers: {'Access-Control-Allow-Origin': '*'}
+// };
+
 const Join = () => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
+    const [rooms, setRooms] = useState([]);
+
+    // useEffect(() => {
+    //     axios.get(ENDPOINT, config)
+    //       .then(res => {
+    //         console.log('AXIOS', res);
+    //         const rooms = res.data;
+    //         setRooms([...rooms]);
+    //       })
+    // });
 
     return(
         <div className="joinOuterContainer">
@@ -25,13 +44,7 @@ const Join = () => {
                             </Button>
                         </Link>
                         <p>OR</p>
-                        <Link 
-                            onClick={(e) => (!name || !room) ? e.preventDefault() : null} 
-                            to={`/chat?name=${name}&room=${room}`}>
-                            <Button className="button" variant="contained" color="primary">
-                                    Join Existing
-                            </Button>
-                        </Link>
+                        <JoinSelect rooms={rooms}/>
                     </div>
                 </form>
             </div>

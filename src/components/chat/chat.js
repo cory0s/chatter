@@ -20,6 +20,7 @@ const Chat = ({ location }) => {
     const [users, setUsers] = useState([]);
     const [rooms, setRooms] = useState([]);
 
+
     const ENDPOINT = 'localhost:8000';
     
     useEffect(() => {
