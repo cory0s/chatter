@@ -9,6 +9,12 @@
     width: 50%;
 }
 
+.heading{
+    font-family: 'Comfortaa', cursive;
+    margin-top: 0px;
+    text-align: center;
+}
+
 .joinInput{
     display: flex;
     flex-direction: column;
@@ -21,12 +27,6 @@
 .joinInput input{
     font-family: 'Comfortaa', cursive;
     margin-bottom: 5px;
-}
-
-.heading{
-    font-family: 'Comfortaa', cursive;
-    margin-top: 0px;
-    text-align: center;
 }
 
 a{
