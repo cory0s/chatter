@@ -81,7 +81,6 @@ const Chat = ({ location }) => {
                 </div>
                 <div className="usersContainer">
                     <Users users={users}/>
-                    <Rooms rooms={rooms} />
                 </div>
             </div>
         </div>

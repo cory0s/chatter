@@ -9,24 +9,21 @@ import Input from '@material-ui/core/Input';
 
 import './join.css';
 
-// const ENDPOINT = 'http://localhost:8000';
-// const config = {
-//     headers: {'Access-Control-Allow-Origin': '*'}
-// };
+const ENDPOINT = 'http://localhost:8000';
 
-const Join = () => {
+const Join = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
     const [rooms, setRooms] = useState([]);
 
-    // useEffect(() => {
-    //     axios.get(ENDPOINT, config)
-    //       .then(res => {
-    //         console.log('AXIOS', res);
-    //         const rooms = res.data;
-    //         setRooms([...rooms]);
-    //       })
-    // });
+    useEffect(() => {
+        axios.get(ENDPOINT)
+            .then(res => {
+                console.log('AXIOS', res);
+                const rooms = res.data;
+                setRooms([...rooms]);
+        });
+    }, [location]);
 
     return(
         <div className="joinOuterContainer">
