@@ -6,11 +6,11 @@ import ScrollToBottom from 'react-scroll-to-bottom';
 
 
 
-const Messages = ({ messages, name }) => (
+const Messages = ({ messages, name, date }) => (
     <ScrollToBottom className="messages">
         {messages.map((message, idx) => 
             <div key={idx}>
-                <Message message={message} name={name} />
+                <Message message={message} name={name} date={date}/>
             </div>
         )}
     </ScrollToBottom>

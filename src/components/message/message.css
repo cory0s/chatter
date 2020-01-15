@@ -9,11 +9,25 @@
     justify-content: flex-start;
 } */
 
+.messageInfo{
+    display: flex;
+    margin: 0px;
+}
+
+.sentText{
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+.dateText{
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
 .messageBox{
     background: white;
     border-radius: 20px;
     display: inline-block;
-    max-width: 80%;
     margin: 2px;
     padding: 5px 20px;
 }
@@ -28,10 +42,10 @@
     word-wrap: break-word;
 }
 
-.sentText{
-    margin-bottom: 5px;
-}
-
 .backgroundBlue{
     background: rgb(57, 57, 228);
+}
+
+.backgroundLight{
+    border: solid 1px grey;
 }
