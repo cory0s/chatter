@@ -10,7 +10,7 @@ const InfoBar = ({ room }) => {
             <h3>{room}</h3>
             </div>
             <div className="rightInnerContainer">
-                <a href="/">X</a>
+                <a href="/">Leave Room</a>
             </div>
         </div>
     )
