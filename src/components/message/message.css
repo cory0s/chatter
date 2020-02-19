@@ -1,27 +1,17 @@
-.messageContainer.justifyEnd{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-/* .messageContainer.justifyStart{
-    display: flex;
-    justify-content: flex-start;
-} */
-
 .messageInfo{
     display: flex;
     margin: 0px;
 }
 
 .sentText{
-    font-size: 1.2em;
-    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
 }
 
 .dateText{
-    font-size: 0.7em;
-    margin-left: 5px;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
 }
 
 .messageBox{
@@ -35,7 +25,7 @@
 .messageText{
     border-radius: 5px;
     float: left;
-    font-size: 1.1em;
+    font-size: 0.9rem;
     margin: 0px;
     padding: 2px 2px;
     width: 100%;
@@ -43,9 +33,9 @@
 }
 
 .backgroundBlue{
-    background: rgb(57, 57, 228);
+    background: rgb(230, 228, 228);
 }
 
 .backgroundLight{
-    border: solid 1px grey;
+    border: solid 1px lightgrey;
 }

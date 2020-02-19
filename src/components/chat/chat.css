@@ -2,33 +2,32 @@
     align-items: stretch;
     background: lightblue;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;
     justify-content: center;
-    padding: 10px;
+    padding: 2rem;
 }
 
 .container{
     background: white;
     border-radius: 8px;
     display: flex;
+    height: 85%;
     justify-content: space-between;
-    padding: 5px;
-    max-width: 800px;
-    width: 80%;
+    width: 100%;
 }
 
 .chatContainer{
     background: white;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     flex-grow: 2;
     justify-content: space-between;
-    padding: 3px;
 }
 
 .usersContainer{
-    background: rgb(241, 181, 102);
-    border-radius: 8px;
+    border-right: lightgrey 3px solid;
     display: flex;
     flex-direction: column;
     margin-left: 3px;

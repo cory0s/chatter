@@ -1,10 +1,32 @@
 .infoBar{
+    border-bottom: lightgrey 2px solid;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
-.infoBar a{  
-    font-size: 1.5em;
+.infoBar h3{
+    margin: 1rem 1rem 0px;
+}
+
+.infoBar p{
+    color: rgb(165, 164, 164);
+    margin: 0.25rem 1rem 1rem;
+}
+
+.infoBar a{
+    color: black;
+    display: table-cell;
+    font: 'Roboto';
+    font-size: 1em;
+    height: 100%;
     margin: 10px;
+    text-align: center;
     text-decoration: none;
+    vertical-align: middle;
+}
+
+.rightInnerContainer{
+    display: table;
+    height: 100%;
 }
