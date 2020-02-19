@@ -2,12 +2,12 @@ import React from 'react';
 
 import './infobar.css';
 
-const InfoBar = ({ room }) => {
+const InfoBar = ({ room, users }) => {
     return(
         <div className="infoBar">
             <div className="leftInnerContainer">
-                {/* <img className="onlineIcon" src={onlineIcon} alt="online"/> */}
-            <h3>{room}</h3>
+                <h3>{room}</h3>
+                <p>{users.length} members</p>
             </div>
             <div className="rightInnerContainer">
                 <a href="/">Leave Room</a>

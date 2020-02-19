@@ -1,16 +1,16 @@
-.form {
+.message-form {
     display: flex;
 }
 
-.input{
+.message-input{
     border: none;
     font-size: 1.2em;
-    margin-top: 5px;
-    padding: 5%;
+    /* margin-top: 5px; */
+    padding: 1rem;
     width: 80%;
 }
 
-.input:focus, .sendButton:focus, textarea:focus, select:focus{
+.message-input:focus, .sendButton:focus, textarea:focus, select:focus{
     outline: none;
 }
 
@@ -25,6 +25,7 @@
     color: papayawhip;
     display: inline-block;
     font-size: 1em;
+    margin: 0.2rem;
     padding: 20px;
     text-transform: uppercase;
     text-decoration: bold;
