@@ -1,10 +1,10 @@
 # Chatter
-A real time chat hangouts application.
-
+A web socket based chat hangouts application.
 See server repo here: https://github.com/cory0s/chatter-server
 
-## Features
 ![](https://github.com/cory0s/chatter/blob/master/src/images/Home-1.png)
+
+## Features
 
 ### Front End
 - Built using React, Material-UI, and Socket.io
@@ -12,6 +12,10 @@ See server repo here: https://github.com/cory0s/chatter-server
 
 ### Back End
 - Built using Node.js, Express, MongoDB, and Socket.io
+
+### Login
+![](https://github.com/cory0s/chatter/blob/master/src/images/Home-2.png | width=100)
+![](https://github.com/cory0s/chatter/blob/master/src/images/Home-3.png | width=100)
 
 ## To Do
 - [x] List of people currently signed in
