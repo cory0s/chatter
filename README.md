@@ -15,7 +15,7 @@ See server repo here: https://github.com/cory0s/chatter-server
 - Built using Node.js, Express, MongoDB, and Socket.io
 
 ### Login
-![](https://github.com/cory0s/chatter/blob/master/src/images/Home-2.png)
+![](https://github.com/cory0s/chatter/blob/master/src/images/Home-2.png =100x100)
 
 ![](https://github.com/cory0s/chatter/blob/master/src/images/Home-3.png | width=100)
 
