@@ -12,6 +12,7 @@
     background: white;
     border-radius: 8px;
     display: flex;
+    filter: drop-shadow(0 0 20px #333);
     height: 85%;
     justify-content: space-between;
     width: 100%;

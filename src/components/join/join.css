@@ -1,12 +1,22 @@
 .joinOuterContainer{
-    padding-top: 15%;
+    background: url('../../images/splash.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .joinInnerContainer{
-    justify-content: center;
-    margin: 0px auto;
-    max-width: 320px;
-    width: 50%;
+    background: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    max-height: 370px;
+    opacity: 0.8;
+    padding: 2rem;
+    position: relative;
+    top: 10rem;
 }
 
 .heading{
@@ -21,7 +31,7 @@
 }
 
 .joinInput p{
-    margin: 0px auto 0px;
+    margin: 0 auto 2rem;
 }
 
 .joinInput input{
@@ -32,7 +42,7 @@
 a{
     display: flex;
     justify-content: center;
-    margin: 10px auto;
+    margin: 1rem auto 2rem;
     text-decoration: none;
     width: 150px;
 }
