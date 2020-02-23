@@ -4,7 +4,7 @@ A real time chat hangouts application.
 See server repo here: https://github.com/cory0s/chatter-server
 
 ## Features
-![](src/images/filename Hero-1.png)
+![](src/images/Hero-1.png)
 
 ### Front End
 - Built using React, Material-UI, and Socket.io
