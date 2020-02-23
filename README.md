@@ -13,7 +13,7 @@ See server repo here: https://github.com/cory0s/chatter-server
 - Built using Node.js, Express, MongoDB, and Socket.io
 
 ### Login
-![](https://github.com/cory0s/chatter/blob/master/src/images/main.gif)
+![](https://github.com/cory0s/chatter/blob/master/src/images/splash.gif)
 
 ## To Do
 - [x] List of people currently signed in
